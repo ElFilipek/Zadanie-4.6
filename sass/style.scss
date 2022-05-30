@@ -7,6 +7,7 @@ $font-header-main: 'Poppins', sans-serif;
 $font-header-secondary: 'Mulish', sans-serif;
 $font-text: 'Libre Franklin', sans-serif;
 $font-logo: 'Lobster', cursive;
+$font-color-grey: #808080;
 
 /*Global*/
 
@@ -26,7 +27,6 @@ header {
 section {
     padding-top: 96px;
     padding-bottom: 96px;
-    align-content: center;
 }
 .container {
     width: 100%;
@@ -49,6 +49,21 @@ section {
     line-height: 1;
     padding-top: 70px;
 }
+.section-title{
+    font-family: $font-header-main;
+    font-size: 40px;
+    color: $color-dark;
+    text-align: center;
+    line-height: 0;
+}
+.section-subtitle {
+    font-family: $font-header-secondary;
+    font-size: 20px;
+    color: $color-dark;
+    text-align: center;
+    position: relative;
+}
+
 .box-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +108,6 @@ section {
     border-color: $color-main;
     background-color: $color-main;
     font-family: $font-header-main;
-    font-weight: -100;
 }
 
 /*INTRO*/
@@ -128,3 +142,64 @@ section {
     justify-content: center;
     text-align: center;
 }
+ /*SERVICES*/
+
+ .services {
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+    .section-subtitle {
+        font-size: 30px;
+        color: $font-color-grey;
+    }
+    i {
+        color: $color-main;
+        height: 70px;
+        width: 70px;
+        font-size: 50px;
+        border-style: solid;
+        border-radius: 70px;
+        border-color: $color-main;
+    }
+    p {
+        font-size: 24px;
+        color: $font-color-grey;
+    }
+}
+
+.first-box {
+    flex: 0 0 33.333%;
+    position: relative;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 36px;
+    text-align: center;
+}
+.second-box {
+    flex: 0 0 33.333%;
+    position: relative;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 36px;
+    text-align: center;
+}
+.third-box {
+    flex: 0 0 33.333%;
+    position: relative;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 36px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 48px;
+    margin: 0 0 72px 0;
+    position: relative;
+}
+.service-title {
+    font-size: 30px;
+    margin: 0 0 12px 0;
+    padding-top: 20px;
+}
+
