@@ -199,8 +199,13 @@ section {
 }
 .service-title {
     font-size: 30px;
+    font-weight: 300;
     margin: 0 0 12px 0;
     padding-top: 20px;
+    text-align: center;
+}
+.card-text {
+    text-align: center;
 }
 
 /*PORTFOLIO*/
